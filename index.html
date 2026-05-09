@@ -483,7 +483,9 @@
         }, 1000);
 
         // Initial setup
-        generateForecast();
+        window.onload = () => {
+            updateWeather();
+        };
 
         // Enter key search
         document.getElementById('citySearch').addEventListener('keypress', (e) => {
